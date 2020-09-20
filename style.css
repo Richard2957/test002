@@ -1,0 +1,136 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+@font-face {
+  font-family:"ranch";
+  src:url(fonts/Ranchers-Regular.ttf);
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+  
+  
+  /*font-family: 'Barlow Condensed', sans-serif;
+  - Family: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
+- Weights: 400, 700
+### Body
+
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 400
+
+*/
+
+html{
+/*effectively 10px. so 1rem=10px; */
+  font-size: 62.5%;
+
+--darkblue: hsl(230, 29%, 20%);
+--darkgreyblue: hsl(230, 11%, 40%);
+--grayblue: hsl(231, 7%, 65%);
+--lightgrayblue: hsl(207, 33%, 95%);
+--graybackground:#ecf1f5
+}
+
+
+body{
+font-family: 'Barlow';
+font-size:18px;
+}
+
+header{
+border:red 5px solid;
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+height:11vh;
+}
+
+#logo{
+background:white;
+border:4px yellow solid;
+width:50%;
+}
+
+
+nav{
+  width:50%;
+  background:var(--graybackground);
+}
+
+content{
+  border:orange solid 2px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+
+
+
+#blab{
+
+border:2px brown dotted;
+
+
+}
+#illustration{
+margin-top:0;
+xmargin-left:30%;
+padding-top:0;
+background-image: url('images/drawers.jpg');
+background-repeat: no-repeat;
+'background-size:contain;
+
+display:block;
+llllloverflow:hidden;
+border:5px black dotted;
+
+min-height: 80rem;
+
+}
+
+
+
+#picframe{
+
+  border:2px navy solid;
+  
+  xxmargin:0 auto;
+
+}
+
+
+#ooooopictures{
+  min-height:27vh;
+  border:4px plum dotted;
+   position:relative;
+  top:0;
+  left:0;
+  margin:0;
+ 
+ 
+    }
+  
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+
+
+}
+@media screen and (min-width: 992px) {
+    body {
+      background-color: blue;
+    }
+content{
+    flex-direction: row;;
+  }
+}
